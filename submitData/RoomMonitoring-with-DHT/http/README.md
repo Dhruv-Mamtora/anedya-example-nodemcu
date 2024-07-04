@@ -1,6 +1,6 @@
 [<img src="https://img.shields.io/badge/Anedya-Documentation-blue?style=for-the-badge">](https://docs.anedya.io?utm_source=github&utm_medium=link&utm_campaign=github-examples&utm_content=nodeMcu)
 
-# Room Monitoring - NodeMCU+DHT (http)
+# Room Monitoring - NodeMCU+DHT+Soil Moisture Sensor Module (http)
 
 
 
@@ -35,6 +35,10 @@ To send hardware sensor value, keep `virtual_Sensor = false`
   2. Connect sensor VCC pin to 3V3.
   3. Connect sensor GND pin to GND.
   4. Connect sensor signal pin to D4.
+
+## Schematic Diagram
+
+<img src="Schematic_Smart-Agricultural-Monitoring-System.svg">
 
 ### Code Set-Up 
 
