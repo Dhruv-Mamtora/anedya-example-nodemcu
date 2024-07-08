@@ -19,12 +19,12 @@
                             Soil Moisture Sensor with NodeMCU
                              - Connect sensor VCC pin to 3V3.
                              - Connect sensor GND pin to GND.
-                             - Connect sensor AO pin to 4(marked D2 on the NodeMCu).
+                             - Connect sensor A0 pin to A0.
 
                   Note: The code is tested on the NodeMCU 1.0 board (ESP12E-Module)
 
                                                                                            Dated: 28-March-2024
-                                                                                           Date Modified: 5-July-2024
+                                                                                           Date Modified: 5-July-2024 (DHRUV MAMTORA)
 
 */
 #include <Arduino.h>
@@ -62,7 +62,7 @@ String timeRes, submitRes; // varibale to handle response
 #define DHT_TYPE DHT11
 // Define the pin connected to the DHT sensor
 #define DHT_PIN 5 // pin marked as D1 on the NodeMCU board
-#define SOIL_MOISTURE_PIN 4  // pin marked as D2 on the NodeMCU board
+#define SOIL_MOISTURE_PIN A0  // pin marked as A0 on the NodeMCU board
 
 // Define the temperature and humidity variables
 float temperature;
@@ -147,7 +147,7 @@ void loop()
     Serial.println("Fetching data from the Virtual sensor");
     temperature = random(20, 40);
     humidity = random(60, 90);
-    moisture = random(2000,4000);
+    moisture = random(0,1024);
 
   }
   Serial.print("Temperature : ");
