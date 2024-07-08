@@ -38,7 +38,7 @@ To send hardware sensor value, keep `virtual_Sensor = false`
 
 ## Schematic Diagram
 
-<img src="Schematic_Smart-Agricultural-Monitoring-System.svg">
+<img src="Smart-Agricultural-Monitoring-System.svg">
 
 ### Code Set-Up 
 
